@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Projects</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'poppins', sans-serif;
+        }
+        .header {
+            background-color: #081b29;
+            height: 80px;
+            width: auto;
+            color: white;
+            margin-top: 0;
+            padding-bottom: 0;
+        }
+        body {
+            background-color: #081b29;
+        }
+        body h1 {
+            text-align: center;
+            text-decoration: underline;
+            color: #fff;
+        }
+
+        body h1 span{
+            color: goldenrod;
+        }
+        .header1 {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px 10%;
+            background: transparent;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+        }
+        .logo {
+            font-size: 25px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: 700;
+        }
+        .navbar a {
+            font-size: 18px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            margin-left: 35px;
+            transition: .3s;
+        }
+        .navbar a:hover {
+            color: goldenrod;
+        }
+        .image {
+            margin-top: 10%;
+            height: 40%;
+            width: 40%;
+        }
+        .content1 {
+            margin-top: 7%;
+            margin-left: 2%;
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: row; /* Set flex-direction to row */
+        }
+.p1 img{
+    height: 270px;
+    width: 270px;
+}
+
+.p2 img{
+    height: 270px;
+    width: 270px;
+}
+.p3 img{
+    height: 270px;
+    width: 270px;
+}
+
+        .p1 h3 {
+            color: floralwhite;
+        }
+        .p2 h3 {
+            color: floralwhite;
+        }
+        .p3 h3 {
+            color: floralwhite;
+        }
+        .footer {
+            margin-top: 15%;
+            height: 10%;
+            width: 100%;
+            background-color: #081b29;
+        }
+        .footer p {
+            color: #fff;
+            text-align: center;
+        }
+
+        
+        .p1 img:hover,
+        .p2 img:hover,
+        .p3 img:hover { opacity: 1.0;
+            transition: transform 0.7s ease;
+            transform: scale(1.95); /* Flip the image on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <header class="header1">
+            <a href="#" class="logo">Refina</a>
+        
+        <nav class="navbar">
+            <a href="index.html">About</a>
+            <a href="skills.html">Skills</a>
+            <a href="#">Projects</a>
+            <a href="resume.html">Certificates</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    </div>
+    </div>
+    <h1>My <span>Projects</span></h1>
+    <div class="content1">
+       <div class="p1">
+        <img src="p1.png"><br><br>
+        <h3><center>WalletWise</center></h3> <!-- Fixed typo here -->
+       </div>
+       <div class="p2">
+        <img src="p2.png"><br><br>
+        <h3><center>Internal Mark Calculator</center></h3> <!-- Fixed typo here -->
+       </div>
+       <div class="p3">
+        <img src="p3.jpg"><br><br>
+        <h3><center>Vaccine Tracking Dapp</center></h3> <!-- Fixed typo here -->
+       </div>
+    </div>
+
+    <div class="footer">
+        <p>
+            &copy; 2024 MyPortfolio. All Rights Reserved.
+            <br>
+            Designed by Refina
+        </p>
+    </div>
+</body>
+</html>
