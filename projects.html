@@ -103,13 +103,51 @@
             color: #fff;
             text-align: center;
         }
+        .proj{
+            border: 2px solid white;
+            margin-right: 50px;
+            width: 400px;
+            height: 250px;
+            box-shadow: 10px 10px white;
+            position: relative;
+            transition: transform 0.8s;
+            transform-style: preserve-3d;
+            
+        }
+        .proj:hover{
+            transform: rotateY(180deg);
+        }
+        .proj .front img{
+            padding-top: 30px;
+        }
+        .proj .back img{
+            /* padding-left: 50px; */
+        }
+        .front, .back{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            color: #fff;
+            background-color: rgb(23, 152, 172);
+        }
+        .back{
+            transform: rotateY(180deg);
+        }
+        .p2 img{
+            padding: 500px;
+        }
 
-        
+        .content1{
+            display:flex;
+            flex-direction: row;
+        }
         .p1 img:hover,
         .p2 img:hover,
         .p3 img:hover { opacity: 1.0;
             transition: transform 0.7s ease;
-            transform: scale(1.95); /* Flip the image on hover */
+            transform: scale(1.5); /* Flip the image on hover */
         }
     </style>
 </head>
@@ -130,20 +168,55 @@
     </div>
     <h1>My <span>Projects</span></h1>
     <div class="content1">
-       <div class="p1">
+       <!-- <div class="p1">
         <img src="p1.png"><br><br>
         <h3><center>WalletWise</center></h3> <!-- Fixed typo here -->
-       </div>
+       <!-- </div>
        <div class="p2">
         <img src="p2.png"><br><br>
         <h3><center>Internal Mark Calculator</center></h3> <!-- Fixed typo here -->
-       </div>
+       <!-- </div>
        <div class="p3">
         <img src="p3.jpg"><br><br>
         <h3><center>Vaccine Tracking Dapp</center></h3> <!-- Fixed typo here -->
-       </div>
-    </div>
+        
 
+       <div class="proj">
+        <div class="front">
+            <center><img src="https://i.ytimg.com/vi/4uSakWW_dMI/maxresdefault.jpg" width="125px" height="125px"><br><br><br>
+            <h2>Internal Mark Calculator</h2></center> 
+            
+        </div>
+        <div class="back">
+            <img style="width: 100%; height: 100%;" src="p2.png">
+        </div>
+    </div>
+   
+
+
+    <div class="proj">
+        <div class="front">
+            <center><img src="https://miro.medium.com/v2/resize:fit:1400/1*F5VZt6wrp8tvNAXwOKfa3A.jpeg" width="125px" height="125px"><br><br><br>
+            <h2>WalletWise</h2></center> 
+        </div>
+        <div class="back">
+            <img style="width: 100%; height: 100%;" src="p1.png">
+        </div>
+        
+    </div>
+    <div class="proj">
+        <div class="front">
+            <center><img src="https://i0.wp.com/securitygrind.com/wp-content/uploads/2021/04/solidity-feat.jpg?fit=233%2C250&ssl=1" width="125px" height="125px"><br><br><br>
+            <h2>Vaccine Tracking Dapp</h2></center> 
+        </div>
+        <div class="back">
+            <img style="width: 100%; height: 100%;" src="p3.jpg">
+        </div>
+        
+    </div>
+    
+
+</div>
     <div class="footer">
         <p>
             &copy; 2024 MyPortfolio. All Rights Reserved.
